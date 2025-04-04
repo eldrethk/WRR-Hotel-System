@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WRR8-0.props" />
+</Project>

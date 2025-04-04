@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WRR-Reserv.props" />
+</Project>

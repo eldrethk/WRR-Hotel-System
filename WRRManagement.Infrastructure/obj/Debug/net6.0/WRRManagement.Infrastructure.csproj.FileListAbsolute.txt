@@ -1,0 +1,15 @@
+C:\Users\karla\source\repos\WRR3.0\WRRManagement.Infrastructure\obj\Debug\net6.0\WRRManagement.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\karla\source\repos\WRR3.0\WRRManagement.Infrastructure\obj\Debug\net6.0\WRRManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\karla\source\repos\WRR3.0\WRRManagement.Infrastructure\obj\Debug\net6.0\WRRManagement.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\karla\source\repos\WRR3.0\WRRManagement.Infrastructure\obj\Debug\net6.0\WRRManagement.Infrastructure.AssemblyInfo.cs
+C:\Users\karla\source\repos\WRR3.0\WRRManagement.Infrastructure\obj\Debug\net6.0\WRRManagement.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\karla\source\repos\WRR3.0\WRRManagement.Infrastructure\bin\Debug\net6.0\WRRManagement.Infrastructure.deps.json
+C:\Users\karla\source\repos\WRR3.0\WRRManagement.Infrastructure\bin\Debug\net6.0\WRRManagement.Infrastructure.dll
+C:\Users\karla\source\repos\WRR3.0\WRRManagement.Infrastructure\bin\Debug\net6.0\WRRManagement.Infrastructure.pdb
+C:\Users\karla\source\repos\WRR3.0\WRRManagement.Infrastructure\bin\Debug\net6.0\WRRManagement.Domain.dll
+C:\Users\karla\source\repos\WRR3.0\WRRManagement.Infrastructure\bin\Debug\net6.0\WRRManagement.Domain.pdb
+C:\Users\karla\source\repos\WRR3.0\WRRManagement.Infrastructure\obj\Debug\net6.0\WRRManagement.Infrastructure.dll
+C:\Users\karla\source\repos\WRR3.0\WRRManagement.Infrastructure\obj\Debug\net6.0\refint\WRRManagement.Infrastructure.dll
+C:\Users\karla\source\repos\WRR3.0\WRRManagement.Infrastructure\obj\Debug\net6.0\WRRManagement.Infrastructure.pdb
+C:\Users\karla\source\repos\WRR3.0\WRRManagement.Infrastructure\obj\Debug\net6.0\ref\WRRManagement.Infrastructure.dll
+C:\Users\karla\source\repos\WRR3.0\WRRManagement.Infrastructure\obj\Debug\net6.0\WRRManag.59AB766E.Up2Date

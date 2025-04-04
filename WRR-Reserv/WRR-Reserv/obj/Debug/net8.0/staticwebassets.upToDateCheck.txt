@@ -1,0 +1,11 @@
+wwwroot\app.css
+wwwroot\bootstrap\bootstrap.min.css
+wwwroot\bootstrap\bootstrap.min.css.map
+wwwroot\favicon.png
+wwwroot\payment-images\amex.png
+wwwroot\payment-images\dinerclub.png
+wwwroot\payment-images\discover.png
+wwwroot\payment-images\mastercard.png
+wwwroot\payment-images\visa.png
+wwwroot\sb-admin-2.css
+wwwroot\wrr-reserv.css

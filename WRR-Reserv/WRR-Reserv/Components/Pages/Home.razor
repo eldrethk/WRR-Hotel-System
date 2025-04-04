@@ -1,0 +1,219 @@
+﻿@rendermode RenderMode.InteractiveServer
+@page "/{id:int}"
+@using Microsoft.AspNetCore.Components
+@inject NavigationManager Navigation
+@inject WRR_Reserv.Services.RoomService roomService
+@inject SearchModel searchModel
+@inject ErrorState ErrorStateService
+
+<PageTitle>Home</PageTitle>
+
+<div class="container rounded my-4 bg-gray-200 p-3">
+    <EditForm  Model="searchModel"  OnValidSubmit="SearchSubmit" FormName="searchForm">
+        <AntiforgeryToken />        
+        <div class="form-row align-items-end rounded bg-white p-3 round-border">                 
+            <div class="form-group col-12 text-danger">
+                <DataAnnotationsValidator />
+                <ValidationSummary />  
+                @if (!string.IsNullOrEmpty(errorMessage))
+                {
+                    <p class="text-danger text-center">@errorMessage</p>
+                }
+            </div>
+            <div class="form-group col-md-3 col-sm-12">
+                <label for="arrivalDate">Arrival Date:</label>
+                <InputDate id="arrivalDate" @bind-Value="searchModel.ArrivalDate" class="form-control text-box single-line" />              
+            </div>
+
+            <div class="form-group col-md-3 col-sm-12">
+                <label for="departureDate">Departure Date:</label>
+                <InputDate id="departureDate" @bind-Value="searchModel.DepartureDate" class="form-control text-box single-line" />                
+            </div>
+
+            <div class="form-group col">
+                <label for="adults">Number of Adults:</label>                
+                <InputSelect id="adults" @bind-Value="searchModel.Adults" class="form-control text-box single-line custom-select">
+                    @foreach(var num in guestNum){
+                        <option value="@num">@num</option>
+                    }
+                </InputSelect>                
+            </div>
+
+            <div class="form-group col">
+                <label for="children">Number of Children:</label>
+                <InputSelect id="children" @bind-Value="searchModel.Children" class="form-control text-box single-line">
+                    <option value="0">0</option>
+                    @foreach(var num in guestNum){
+                        <option value="@num">@num</option>
+                    }
+                </InputSelect>
+
+            </div>
+            <div class="form-group col text-center">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>      
+        </div>
+    </EditForm>
+</div>
+
+
+<div class="container rounded my-4 bg-gray-200 p-3">
+    <h2>Our Accommodations</h2>
+    @if(roomList != null){
+        foreach(var room in roomList)
+        {
+            <div class="row bg-white rounded p-2 m-2 round-border">
+                <div class="col-md-4 viewmore-img-container">
+                    <a class="simple-img" @onclick="() => ViewMore(room.roomType.RoomTypeID)"><img src="@($"https://localhost:44325/{room.mainImage}")" class="img-fluid w-100 rounded" alt="Room Image" /></a>
+
+                </div>
+
+                <div class="col mt-2">
+                    <h4>@room.roomType.Name</h4>
+                    <p><span class="fa fa-user"></span> Sleeps @room.MaxGuests <span class="pl-3 fa fa-bed"></span> @room.roomType.BedType</p>
+                    @if(room.roomType?.Description.Length > 150)
+                    {
+                        <p>@room.roomType.Description.ToString().Substring(0, 150)...</p>
+                    }
+                    else
+                    {
+                        <p>@room.roomType.Description</p>
+                    }               
+                    <p class="text-right"><button class="btn btn-info" @onclick="() => ViewMore(room.roomType.RoomTypeID)">View More</button></p>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p>Loading Rooms....</p>
+    }
+
+</div>
+
+@if(selectedRoom != null){
+    <div id='roomModal' class='modal' role="dialog" data-backdrop="static" style="display:@(IsVisible ? "block" : "none")">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">  
+                    <h2 class="modal-title h3 form-padding-left"> @selectedRoom.roomType.Name</h2>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" @onclick="HideAsync">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    @if(selectedRoom?.roomImages.Count > 0)
+                    {
+                        <div id="carouselExampleControls" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">                            
+
+                                @foreach(var imgs in selectedRoom.roomImages)
+                                {
+                                    <div class="carousel-item @(imgs.MainImage == true ? "active" : "")">
+                                        <a class="simple-img"><img src="@($"https://localhost:44325/{imgs.FileName}")" class="d-block w-100" alt="Room Image" /></a>
+                                    </div>
+                                }                              
+
+                            </div>
+                            @if (selectedRoom.roomImages.Count >= 2)
+                            {
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            }
+                        </div>
+                    }
+                    <div class="my-3">
+                        <h5>Room Details</h5>
+                        <p>@selectedRoom.roomType.Description</p>
+
+                        @if(selectedRoom.roomFeatures.Count > 0)
+                        {
+                            <h5>Special Features</h5>
+                            <ul class="fa-ul">
+                                @foreach(var feature in selectedRoom.roomFeatures)
+                                {
+                                    var icon = (MarkupString)($"&#x{feature.Icon};");                                    <li>
+                                        <i class="fa-li fa">@icon</i>
+                                        @feature.Features
+                                    </li>
+                                }
+                            </ul>
+                        }
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="HideAsync">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+}
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    List<int> guestNum = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+    private string errorMessage;
+
+    private List<ViewRoomModel>? roomList;
+    private ViewRoomModel? selectedRoom;   
+
+    private bool IsVisible { get; set; }
+    private bool errorRead = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!errorRead && ErrorStateService != null && !string.IsNullOrEmpty(ErrorStateService.ErrorMessage))
+        {
+            errorMessage = ErrorStateService.ErrorMessage;           
+            errorRead = true; // Prevents the error message from being read again
+        }
+
+
+        roomList = await roomService.GetAllRoomsAsync(id);
+        selectedRoom = roomList.FirstOrDefault();        
+    } 
+
+    public async Task SearchSubmit()
+    {
+        errorMessage = null;
+        if(searchModel != null)
+        {
+            searchModel.HotelId = id;
+            Navigation.NavigateTo("/RoomResults");
+
+        }
+        StateHasChanged();
+    }
+
+    public void ViewMore(int roomTypeID)
+    {
+        selectedRoom = roomList.FirstOrDefault(x => x.roomType.RoomTypeID == roomTypeID);
+        IsVisible = true;
+        StateHasChanged();
+    }
+
+    public void ShowAsync()
+    {
+        IsVisible = true;
+        StateHasChanged();
+    }
+
+    public void HideAsync()
+    {
+        IsVisible = false;
+        StateHasChanged();
+    }
+
+   
+}

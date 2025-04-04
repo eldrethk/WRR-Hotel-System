@@ -1,0 +1,73 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR-Reserv\\WRR-Reserv\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WRR-Reserv.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WRR-Reserv.9y6t0cxius.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR-Reserv\\WRR-Reserv\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR-Reserv\\WRR-Reserv\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR-Reserv\\WRR-Reserv\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR-Reserv\\WRR-Reserv\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR-Reserv\\WRR-Reserv\\wwwroot\\payment-images\\amex.png",
+      "PackagePath": "staticwebassets\\payment-images\\amex.png"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR-Reserv\\WRR-Reserv\\wwwroot\\payment-images\\dinerclub.png",
+      "PackagePath": "staticwebassets\\payment-images\\dinerclub.png"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR-Reserv\\WRR-Reserv\\wwwroot\\payment-images\\discover.png",
+      "PackagePath": "staticwebassets\\payment-images\\discover.png"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR-Reserv\\WRR-Reserv\\wwwroot\\payment-images\\mastercard.png",
+      "PackagePath": "staticwebassets\\payment-images\\mastercard.png"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR-Reserv\\WRR-Reserv\\wwwroot\\payment-images\\visa.png",
+      "PackagePath": "staticwebassets\\payment-images\\visa.png"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR-Reserv\\WRR-Reserv\\wwwroot\\sb-admin-2.css",
+      "PackagePath": "staticwebassets\\sb-admin-2.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR-Reserv\\WRR-Reserv\\wwwroot\\wrr-reserv.css",
+      "PackagePath": "staticwebassets\\wrr-reserv.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WRR-Reserv.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WRR-Reserv.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WRR-Reserv.props",
+      "PackagePath": "build\\WRR-Reserv.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WRR-Reserv.props",
+      "PackagePath": "buildMultiTargeting\\WRR-Reserv.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WRR-Reserv.props",
+      "PackagePath": "buildTransitive\\WRR-Reserv.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

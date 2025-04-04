@@ -1,0 +1,377 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WRR8-0.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WRR8-0.frnpgguw8h.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\css\\font\\summernote.eot",
+      "PackagePath": "staticwebassets\\css\\font\\summernote.eot"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\css\\font\\summernote.hash",
+      "PackagePath": "staticwebassets\\css\\font\\summernote.hash"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\css\\font\\summernote.ttf",
+      "PackagePath": "staticwebassets\\css\\font\\summernote.ttf"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\css\\font\\summernote.woff",
+      "PackagePath": "staticwebassets\\css\\font\\summernote.woff"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\css\\font\\summernote.woff2",
+      "PackagePath": "staticwebassets\\css\\font\\summernote.woff2"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\css\\sb-admin-2.css",
+      "PackagePath": "staticwebassets\\css\\sb-admin-2.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\css\\smart-scheduler.css",
+      "PackagePath": "staticwebassets\\css\\smart-scheduler.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\css\\summernote.min.css",
+      "PackagePath": "staticwebassets\\css\\summernote.min.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\css\\wrr-admin.css",
+      "PackagePath": "staticwebassets\\css\\wrr-admin.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\WeRentRoomsLogo.jpg",
+      "PackagePath": "staticwebassets\\img\\WeRentRoomsLogo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\amenity-images\\b877fc85-0441-4bdf-89b0-0d5db564f800_2_133579264647796134.jpg",
+      "PackagePath": "staticwebassets\\img\\amenity-images\\b877fc85-0441-4bdf-89b0-0d5db564f800_2_133579264647796134.jpg"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\amenity-images\\dd2e7614-2f95-43fd-b7d3-bbf450b1d7e9_2_133611177195848818.jpg",
+      "PackagePath": "staticwebassets\\img\\amenity-images\\dd2e7614-2f95-43fd-b7d3-bbf450b1d7e9_2_133611177195848818.jpg"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\package-images\\16db4a65-3d4f-43b5-a5ec-6425ad88f1d2_2_133539552936474109.jpg",
+      "PackagePath": "staticwebassets\\img\\package-images\\16db4a65-3d4f-43b5-a5ec-6425ad88f1d2_2_133539552936474109.jpg"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\package-images\\48779f06-bf09-4b39-b33c-4ae0b5ca205f_2_133539552936474109.jpg",
+      "PackagePath": "staticwebassets\\img\\package-images\\48779f06-bf09-4b39-b33c-4ae0b5ca205f_2_133539552936474109.jpg"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\package-images\\e92f04eb-1d27-4c04-b122-e1754645e06d_2_133586163676413632.jpg",
+      "PackagePath": "staticwebassets\\img\\package-images\\e92f04eb-1d27-4c04-b122-e1754645e06d_2_133586163676413632.jpg"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\room-images\\068c3c6f-e291-411b-a943-aad852c9244b_254_133547373365257462.jpg",
+      "PackagePath": "staticwebassets\\img\\room-images\\068c3c6f-e291-411b-a943-aad852c9244b_254_133547373365257462.jpg"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\room-images\\16f53fd4-f4cf-4cdd-961d-f13761019185_133515307733058778.jpg_0",
+      "PackagePath": "staticwebassets\\img\\room-images\\16f53fd4-f4cf-4cdd-961d-f13761019185_133515307733058778.jpg_0"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\room-images\\646dbd95-6339-4919-841b-7acff4fe2216_133515307733058778.jpg_248",
+      "PackagePath": "staticwebassets\\img\\room-images\\646dbd95-6339-4919-841b-7acff4fe2216_133515307733058778.jpg_248"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\room-images\\64d89c8d-d1e6-4434-9713-abd981aa82ad_250_133547373365257462.jpg",
+      "PackagePath": "staticwebassets\\img\\room-images\\64d89c8d-d1e6-4434-9713-abd981aa82ad_250_133547373365257462.jpg"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\room-images\\c2b43a0c-10a2-4387-9a18-56d9567695e4_248_133568253241375379.jpg",
+      "PackagePath": "staticwebassets\\img\\room-images\\c2b43a0c-10a2-4387-9a18-56d9567695e4_248_133568253241375379.jpg"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\room-images\\c70dcd3b-d00e-41c7-ab46-e6c4f1679023_249_133568253241375379.jpg",
+      "PackagePath": "staticwebassets\\img\\room-images\\c70dcd3b-d00e-41c7-ab46-e6c4f1679023_249_133568253241375379.jpg"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\room-images\\d26cb0d0-8f47-4725-8395-6db068bc09bb_133575844481045534.jpg_0",
+      "PackagePath": "staticwebassets\\img\\room-images\\d26cb0d0-8f47-4725-8395-6db068bc09bb_133575844481045534.jpg_0"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\room-images\\d4411570-aa88-4670-9792-3cc871eaf87a_133515307733058778.jpg_0",
+      "PackagePath": "staticwebassets\\img\\room-images\\d4411570-aa88-4670-9792-3cc871eaf87a_133515307733058778.jpg_0"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\room-images\\dfe81fd5-ff4f-4e58-87e0-ab40db54ff74_254_133629715198505424.jpg",
+      "PackagePath": "staticwebassets\\img\\room-images\\dfe81fd5-ff4f-4e58-87e0-ab40db54ff74_254_133629715198505424.jpg"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\room-images\\e5150918-8834-4a0f-a570-e6dba25914df_248_133579264647796134.jpg",
+      "PackagePath": "staticwebassets\\img\\room-images\\e5150918-8834-4a0f-a570-e6dba25914df_248_133579264647796134.jpg"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\img\\room-images\\e826d4a6-7c6e-47d0-88c8-9895dc7ab9ac_249_image_3.jpg",
+      "PackagePath": "staticwebassets\\img\\room-images\\e826d4a6-7c6e-47d0-88c8-9895dc7ab9ac_249_image_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\js\\FileSizeValidate.js",
+      "PackagePath": "staticwebassets\\js\\FileSizeValidate.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\js\\summernote.min.js",
+      "PackagePath": "staticwebassets\\js\\summernote.min.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\karla\\source\\repos\\WRR-Hotel\\WRR8-0\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WRR8-0.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WRR8-0.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WRR8-0.props",
+      "PackagePath": "build\\WRR8-0.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WRR8-0.props",
+      "PackagePath": "buildMultiTargeting\\WRR8-0.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WRR8-0.props",
+      "PackagePath": "buildTransitive\\WRR8-0.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

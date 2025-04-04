@@ -1,0 +1,333 @@
+﻿@page "/RoomResults"
+@rendermode RenderMode.InteractiveServer
+@inject SearchModel searchModel
+@inject BookingModel bookingModel
+@inject NavigationManager Navigation
+
+@inject WRR_Reserv.Services.RoomService roomService
+
+<link rel='stylesheet' id='fontawesome-css' href='https://use.fontawesome.com/releases/v5.11/css/all.css' type='text/css' media='all' />
+<div class="container rounded my-4 bg-gray-200 p-3">
+
+    <div class="rounded bg-white py-2 my-4 mx-2 text-center round-border">
+        <div class="row justify-content-center">
+            <div class="col-sm-4 h5 text-center pt-2"><i class="fas fa-calendar-alt text-secondary d-none d-md-inline-block"></i> @Convert.ToDateTime(searchModel.ArrivalDate).ToString("ddd, MMM dd") - @Convert.ToDateTime(searchModel.DepartureDate).ToString("ddd, MMM dd")</div>
+            <div class="col-sm-4 h5 text-center pt-2"><i class="fas fa-user text-secondary ml-3 mr-2 d-none d-md-inline-block"></i>@searchModel.Adults Adults <span class="d-md-none d-sm-inline mr-1">/</span><i class="fas fa-child text-secondary ml-2 mr-2 d-none d-md-inline-block"></i>@searchModel.Children Children</div>
+        </div>
+    </div>
+    @if (availRoomList == null)
+    {
+        <div class="row bg-white pt-3 pb-1 m-2 text-center">
+            <p class="text-danger w-100 text-center">No rooms available for the selected dates.</p>
+        </div>
+    }
+    else if(availRoomList.Count == 0){
+        <div class="row bg-white pt-3 pb-1 m-2 text-center">
+            <p class="w-100 text-center">Loading...</p>
+        </div>
+    }
+   else if(availRoomList?.Count > 0){
+        foreach(var availRoom in availRoomList){
+            <div class="row rounded bg-white p-2 my-4 mx-2 round-border">
+                @if(availRoom.viewRoomType.mainImage != null){
+                    <div class="col-md-4 pb-1 viewmore-img-container">
+                        <a class="simple-img" @onclick="() => ViewMore(availRoom.viewRoomType.roomType.RoomTypeID)"><img src="@($"https://localhost:44325/{availRoom.viewRoomType.mainImage}")" class="img-fluid w-100 rounded" alt="Room Image" /></a>
+                    </div>
+                }
+                <div class="col pb-1 mt-2">
+                    <h3>@availRoom.viewRoomType.roomType.Name</h3>
+                    <p><span class="fa fa-user"></span> Sleeps @availRoom.maxGuests <span class="pl-3 fa fa-bed"></span> @availRoom.viewRoomType.roomType.BedType</p>
+                    @if (availRoom.viewRoomType.roomType?.Description.Length > 150)
+                    {
+                        <p>@availRoom.viewRoomType.roomType.Description.ToString().Substring(0, 150)...</p>
+                    }
+                    else
+                    {
+                        <p>@availRoom.viewRoomType.roomType.Description</p>
+                    }
+
+                </div>
+
+                <div class="col-md-2 float-right py-3 pb-1">
+                    <div class="d-none d-md-block">
+                        <p class="text-secondary"><strong>RATES AS LOW AS</strong></p>
+                        <p><span class="h3">@availRoom.rates.Min().ToString("C")</span> / day</p>
+                    </div>
+                    <p class="my-2"><button type="button" id="btnViewMore" class="anchorRoom btn btn-info w-100" @onclick="() => ViewMore(availRoom.viewRoomType.roomType.RoomTypeID)">Room Details</button></p>
+                </div>
+                <div class="col-md-12">
+                    <hr />
+                </div>
+                @if (totalDays < availRoom.minStay)
+                {
+                    <div class="col-md-12 text-right"><span class="badge badge-dark p-3 mb-2">a @availRoom.minStay night minimum stay is required.</span> </div>
+                }
+                else{
+                    <div class="col-md-7 pt-2">
+                        <h4>Standard Rate</h4>
+                    </div>
+                    <div class="col-md-3 pt-2 text-center">
+                        @if(availRoom.ViewRoomRateAs == "Subtotal"){
+                            <p class="mb-0"><span class="h3">@availRoom.subTotal.ToString("C")</span><span class="small d-md-none d-sm-inline text-uppercase"> / subtotal</span></p>
+                            <p class="small d-none d-md-inline-block">SubTotal</p>
+                        }
+                        else if(availRoom.ViewRoomRateAs == "Total"){
+                            <p class="mb-0"><span class="h3">@availRoom.total.ToString("C")</span><span class="small d-md-none d-sm-inline text-uppercase"> / total</span></p>
+                            <p class="small d-none d-md-inline-block">Total</p>
+                        }
+                        else {
+                            <p class="mb-0"><span class="h3">@availRoom.avgDailyRate.ToString("C")</span><span class="small d-md-none d-sm-inline text-uppercase"> / avg per night</span></p>
+                            <p class="small d-none d-md-inline-block">Avg Per Night</p>
+                        }
+                    </div>
+                    <div class="col-md-2 pt-2">
+                        <p><button class="btn btn-primary w-100" @onclick="() => SelectRoom(availRoom)">Select</button></p>
+                        <p><button type="button" class="anchorRate btn btn-secondary w-100" @onclick="() => ViewRates(availRoom)">View Rates</button></p>
+
+                    </div>
+                }
+            </div>
+        }
+    }
+    else{
+        <div class="row bg-white pt-3 pb-1 m-2 text-center">
+            <p class="text-danger w-100 text-center">No rooms available for the selected dates.</p>
+        </div>
+    }
+</div>
+
+<div id="rateModel" class="modal" role="dialog" data-backdrop="static" style="display:@(RateModalVisible ? "block" : "none")">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title h3 form-padding-left">@selectedAvailRoom?.viewRoomType.roomType?.Name</h2>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" @onclick="() => HideRateModal()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4 class="text-primary">Standard Rates</h4>
+                @if(selectedAvailRoom != null){
+                    @if(selectedAvailRoom.ViewRoomRateAs == "Basic"){
+                        <table class="table table-striped">
+                            <tr>
+                                <td class="pl-4 font-weight-bold">Deposit:</td>
+                                <td>@selectedAvailRoom.deposit.ToString("C")</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-4 font-weight-bold">SubTotal:</td>
+                                <td>@selectedAvailRoom.subTotal.ToString("C")</td>
+                            </tr>
+                            <tr class="border-bottom: 1px solid #999">
+                                <td class="pl-4 font-weight-bold">Taxes:</td>
+                                <td>@selectedAvailRoom.tax.ToString("C")</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-4 font-weight-bold">Total:</td>
+                                <td>@selectedAvailRoom.total.ToString("C")</td>
+                            </tr>
+                        </table>
+                    }
+                    else{
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <td>Date</td>
+                                    <td>Rate</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    int i = 0;
+                                    foreach (var daily in selectedAvailRoom.ratesDate)
+                                    {
+                                        <tr>
+                                            <td>@Convert.ToDateTime(daily.Date).ToString("dddd, MMM-dd-yyyy")</td>
+                                            <td>@selectedAvailRoom.rates[i].ToString("C")</td>
+                                        </tr>
+                                        i++;
+                                    }
+
+                                }
+                            </tbody>
+                        </table>
+                        <div class="float-right">
+                            <table style="width: 260px;">
+                                <tr>
+                                    <td class="pl-4"><strong>Deposit:</strong></td>
+                                    <td class="text-right pr-4">@selectedAvailRoom.deposit.ToString("C")</td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-4"><strong>SubTotal:</strong></td>
+                                    <td class="text-right pr-4"> @selectedAvailRoom.subTotal.ToString("C")</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #999;">
+
+                                    <td class="pl-4"><strong>Taxes:</strong></td>
+                                    <td class="text-right pr-4">@selectedAvailRoom.allExtraFees.ToString("C")</td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-4"><strong>Total: </strong></td>
+                                    <td class="text-right pr-4">@selectedAvailRoom.total.ToString("C")</td>
+                                </tr>
+
+                            </table>
+
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p>There was an error loading this Room's rates.</p>
+                }
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="() => HideRateModal()">Close</button>
+            </div>
+        </div>
+    </div>  
+</div>
+
+
+@if (selectedRoom != null)
+{
+    <div id='roomModal' class='modal' role="dialog" data-backdrop="static" style="display:@(RoomModalVisible ? "block" : "none")">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title h3 form-padding-left"> @selectedRoom?.roomType.Name</h2>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" @onclick="HideRoomAsync">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    @if (selectedRoom?.roomImages.Count > 0)
+                    {
+                        <div id="carouselExampleControls" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+
+                                @foreach (var imgs in selectedRoom.roomImages)
+                                {
+                                    <div class="carousel-item @(imgs.MainImage == true ? "active" : "")">
+                                        <a class="simple-img"><img src="@($"https://localhost:44325/{imgs.FileName}")" class="d-block w-100" alt="Room Image" /></a>
+                                    </div>
+                                }
+
+                            </div>
+                            @if (selectedRoom.roomImages.Count >= 2)
+                            {
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            }
+                        </div>
+                    }
+                    <div class="my-3">
+                        <h5>Room Details</h5>
+                        <p>@selectedRoom.roomType.Description</p>
+
+                        @if (selectedRoom.roomFeatures.Count > 0)
+                        {
+                            <h5>Special Features</h5>
+                            <ul class="fa-ul">
+                                @foreach (var feature in selectedRoom.roomFeatures)
+                                {
+                                    var icon = (MarkupString)($"&#x{feature.Icon};");
+                                    <li>
+                                        <i class="fa-li fa">@icon</i>
+                                        @feature.Features
+                                    </li>
+                                }
+                            </ul>
+                        }
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="HideRoomAsync">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+}
+
+
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+    private List<AvailableRackRoom>? availRoomList = new List<AvailableRackRoom>();
+    private int totalDays; 
+    private AvailableRackRoom? selectedAvailRoom;
+    private ViewRoomModel? selectedRoom;
+
+    private bool RateModalVisible { get; set; }
+    private bool RoomModalVisible { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        totalDays = searchModel.DepartureDate.Subtract(searchModel.ArrivalDate).Days;
+        availRoomList = await roomService.GetAvailableRoomsAsync(searchModel.HotelId, searchModel.ArrivalDate, searchModel.DepartureDate, searchModel.Adults, searchModel.Children);
+        await base.OnInitializedAsync();
+
+    }
+
+    public void ViewMore(int roomTypeID)
+    {
+        selectedRoom = availRoomList.FirstOrDefault(x => x.viewRoomType.roomType.RoomTypeID == roomTypeID)?.viewRoomType;
+        RoomModalVisible = true;
+        StateHasChanged();
+    }
+
+    public void ViewRates(AvailableRackRoom availRackRoom)
+    {
+        selectedAvailRoom = availRackRoom;
+        RateModalVisible = true;
+        StateHasChanged();
+    }
+
+    public void SelectRoom(AvailableRackRoom availRackRoom)
+    {
+        if (availRackRoom != null)
+        {
+            bookingModel.SearchModel = searchModel;
+            bookingModel.availableRackRooms = availRackRoom;
+
+            //go to booking page
+            Navigation.NavigateTo("/Book", true);
+            StateHasChanged();
+        }
+        else{
+            //navigate to error page. 
+        }
+    }
+
+    public void HideRoomAsync()
+    {
+        selectedRoom = null;
+        RoomModalVisible = false;
+        StateHasChanged();
+        
+    }
+
+    public void HideRateModal()
+    {
+        selectedAvailRoom = null;
+        RateModalVisible = false;
+        StateHasChanged();
+    }
+
+    public async Task SearchSubmit()
+    {    
+       availRoomList = await roomService.GetAvailableRoomsAsync(searchModel.HotelId, searchModel.ArrivalDate, searchModel.DepartureDate, searchModel.Adults, searchModel.Children);
+       StateHasChanged();
+    }
+}
